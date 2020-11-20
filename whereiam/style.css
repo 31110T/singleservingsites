@@ -1,0 +1,65 @@
+* {
+    color: rgb(206, 235, 245);
+    font-family: sans-serif;
+}
+
+body {
+    /* background: radial-gradient(rgb(206, 235, 245), black); */
+    background-color: black;
+}
+
+#screen {
+    position: absolute;
+    height: 97vh;
+    width: 97vw;
+}
+
+#positions {
+    width: 97%;
+    height: 95%;
+}
+
+.trail {
+    position: absolute;
+    cursor: none;
+    padding: 0px !important;
+    margin: 0px !important;
+    animation-iteration-count: 1;
+    animation: 10s fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+}
+
+#text2 {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 24px;
+}
+
+
+/* button {
+    background-color: rgb(206, 235, 245);
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    border: none;
+    /* padding: 2px;
+    border-radius: 50%; 
+
+
+}*/

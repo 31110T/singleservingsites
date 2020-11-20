@@ -1,0 +1,29 @@
+* {
+    color: rgb(206, 235, 245);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    line-height: .99;
+    font-family: "Helvetica", sans-serif;
+    font-size: 7px;
+    text-transform: uppercase;
+    /* display: inline-block; */
+}
+
+#text {
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    right: 20px;
+    column-count: 20;
+    column-gap: 0px;
+    column-width: 27px;
+    /* text-align: justify; */
+    word-wrap: break-word;
+}
+
+div {
+    /* display: inline-block; */
+}
