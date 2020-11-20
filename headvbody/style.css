@@ -12,12 +12,28 @@ body {
     background-color: black;
 }
 
-div {
+#container {
+    position: absolute;
+    left: 40px;
+}
+
+#one {
     display: inline-block;
     padding: 20px;
     border-radius: 50%;
     height: 90vh;
-    width: 45vw;
+    width: 44vw;
+    border: 1.8px solid rgb(206, 235, 240);
+    text-align: center;
+    text-overflow: clip;
+}
+
+#two {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    height: 90vh;
+    width: 44vw;
     border: 1.8px solid rgb(206, 235, 240);
     text-align: center;
     text-overflow: clip;
@@ -29,6 +45,6 @@ div {
 } */
 
 p {
-    padding-top: 50px;
+    padding-top: 350px;
     margin: 0 auto;
 }

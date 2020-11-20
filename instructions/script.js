@@ -9,7 +9,7 @@ function counter() {
     the demands of biological reproduction under compulsory heterosexuality and the drive
     toward a future that is inaccessible to queer forms of life.
     This connection between queerness and failure is embodied in a wide range of theoretical
-    practices and intellectual histories reaching back to the start of the twentieth century. As literary
+    practices sand intellectual histories reaching back to the start of the twentieth century. As literary
     
     theorist, Heather Love, notes in her work on loss and the politics of queer history, “same-
     sex desire is marked by a long history of association with failure, impossibility and loss,” such
@@ -115,15 +115,3 @@ to make visible through a queer critical practice the values that structure our 
     }
 }
 counter();
-
-
-// if (x & 1) {
-//     x = "▒"
-// } else {
-//     x = "█"
-// }
-// if (y & 1) {
-//     y = "▓"
-// } else {
-//     y = "░"
-// }

@@ -1,5 +1,5 @@
-var example = ['head', 'body', 'etc', 'random', "something"];
-
+var example = ['head', 'body', 'public', 'private', 'outer', 'inner', 'transform', 'stasis'];
+// var seq2 = ['body', 'public', 'outer', 'transform', ""];
 textSequence(0);
 
 function textSequence(i) {
@@ -9,7 +9,7 @@ function textSequence(i) {
             document.getElementById("sequence").innerHTML = example[i];
             textSequence(++i);
             document.getElementById("seq2").innerHTML = example[i];
-        }, 60); // 1 second (in milliseconds)
+        }, 150); // 1 second (in milliseconds)
 
     } else if (example.length == i) { // Loop
         textSequence(0);
