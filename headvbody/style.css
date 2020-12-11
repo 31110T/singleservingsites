@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     text-transform: uppercase;
-    color: rgb(206, 235, 240);
+    color: rgb(154, 202, 222);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     border-radius: 50%;
     height: 90vh;
     width: 44vw;
-    border: 1.8px solid rgb(206, 235, 240);
+    border: 1.8px solid rgb(154, 202, 222);
     text-align: center;
     text-overflow: clip;
 }
@@ -34,7 +34,7 @@ body {
     border-radius: 50%;
     height: 90vh;
     width: 44vw;
-    border: 1.8px solid rgb(206, 235, 240);
+    border: 1.8px solid rgb(154, 202, 222);
     text-align: center;
     text-overflow: clip;
 }
