@@ -23,15 +23,18 @@ function enableCam(event) {}
 
 // Enable the live webcam view and start classification.
 function enableCam(event) {
-    // Only continue if the COCO-SSD has finished loading.
+    console.log("media is working")
+        // Only continue if the COCO-SSD has finished loading.
     if (!model) {
         return;
+
     }
 
     // Hide the button once clicked.
+    console.log("media is workingreally")
     event.target.classList.add('removed');
-
-    // getUsermedia parameters to force video but not audio.
+    console.log("clicked")
+        // getUsermedia parameters to force video but not audio.
     const constraints = {
         video: true
     };
@@ -40,6 +43,7 @@ function enableCam(event) {
     navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
         video.srcObject = stream;
         video.addEventListener('loadeddata', predictWebcam);
+        console.log("cam")
     });
 }
 
@@ -82,6 +86,7 @@ function predictWebcam() {
             // If we are over 66% sure we are sure we classified it right, draw it!
             if (predictions[n].score > 0.66) {
                 const p = document.createElement('p');
+                //addiing text
                 p.innerText = predictions[n].class + ' - with ' +
                     Math.round(parseFloat(predictions[n].score) * 100) +
                     '% confidence.';
@@ -91,6 +96,7 @@ function predictWebcam() {
 
                 const highlighter = document.createElement('div');
                 highlighter.setAttribute('class', 'highlighter');
+                // didnt workhighlighter.innerText('trying to add text');
                 highlighter.style = 'left: ' + predictions[n].bbox[0] + 'px; top: ' +
                     predictions[n].bbox[1] + 'px; width: ' +
                     predictions[n].bbox[2] + 'px; height: ' +
