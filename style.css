@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: rgb(154, 202, 222);
+    font-family: 'helvetica', sans-serif;
+    padding: 20px;
+}
+
+a,
+a:visited {
+    display: block;
+    color: rgb(154, 202, 222);
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    color: black;
+}
+
+#intro {
+    position: absolute;
+    width: 250px;
+    left: 300px;
+    top: 25px;
+}
+
+#links {
+    position: absolute;
+    width: 250px;
+}
+
+.link {
+    margin: 10px;
+    border: 1px solid rgb(154, 202, 222);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: rgb(154, 202, 222);
+    color: black
+}

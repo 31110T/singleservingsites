@@ -72,34 +72,33 @@ Personify<br>
 Hide<br>
 Hack<br>
 Lay bare material function/expose<br>
-to make visible through a queer critical practice the values that structure our technology.<br>`
+to make visible through a queer critical practice the values that structure technology<br>`
 
 
     var list2 = `
-Embrace: <br>
-critical unmaking <br>
-technological failure<br>
+critical  <br>
+radical <br>
+Overwhelm<br>
+failure<br>
 exploits<br>
 bugs<br>
 abuse<br>
-Overwhelm<br>
 misuse<br>
 glitch<br>
 break<br>
 iterate<br>
 fail<br>
+Hack<br>
+Hide<br>
 Subvert<br>
 Interfere<br>
-Non norm<br>
-Challenge user<br>
-situate/spatialize<br>
+Challenge<br>
+spatialize<br>
 Transform<br>
-Hack<br>
 Personify<br>
-Hide<br>
-
-Lay bare material function/expose<br>
-to make visible through a queer critical practice the values that structure our technology.<br>`
+communicate<br>
+Lay bare material function<br>
+to make visible through a queer critical practice the values that structure technology.<br>`
 
     // if (i & 1) {
     //     document.getElementById("text").insertAdjacentHTML("afterbegin", content);
@@ -107,7 +106,7 @@ to make visible through a queer critical practice the values that structure our 
     //     document.getElementById("text").insertAdjacentHTML("beforeend", content2);
     // }
 
-    document.getElementById("text").insertAdjacentHTML("beforeend", list);
+    document.getElementById("text").insertAdjacentHTML("beforeend", list2);
     // document.getElementById("text").insertAdjacentHTML("beforeend", content2);
     i++;
     if (i <= 200) {
