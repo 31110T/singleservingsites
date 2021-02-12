@@ -84,26 +84,28 @@ function predictWebcam() {
         // they have a high confidence score.
         for (let n = 0; n < predictions.length; n++) {
             // If we are over 66% sure we are sure we classified it right, draw it!
-            if (predictions[n].score > 0.1) {
+            if (predictions[n].score > 0.01) {
                 const p = document.createElement('p');
+                // document.querySelector("body").innerHTML("p");
                 //adding text
                 p.innerText = predictions[n].class + ' - with ' +
                     Math.round(parseFloat(predictions[n].score) * 100) +
                     '% confidence.';
-                p.style = 'margin-left: ' + predictions[n].bbox[0] + 'px; margin-top: ' +
-                    (predictions[n].bbox[1] - 10) + 'px; width: ' +
-                    (predictions[n].bbox[2] - 10) + 'px; top: 0; left: 0;';
+                p.style = 'left: ' + predictions[n].bbox[0] * 1.3 + 'px; margin-top: ' +
+                    (predictions[n].bbox[1] - 10) * 2 + 'px; width: ' +
+                    (predictions[n].bbox[2] - 10) + 'px; top: ';
 
-
+                // p.style = 'margin-left: ' + predictions[n].bbox[0] * 1.3 + 'px; margin-top: ' +
+                // (predictions[n].bbox[1] - 10) * 2 + 'px; width: ' +
+                // (predictions[n].bbox[2] - 10) + 'px; top: 0; left: 0;';
 
                 const highlighter = document.createElement('div');
                 highlighter.setAttribute('class', 'highlighter');
                 // didnt workhighlighter.innerText('trying to add text');
-                highlighter.style = 'left: ' + predictions[n].bbox[0] * 2 + 'px; top: ' +
+                highlighter.style = 'left: ' + predictions[n].bbox[0] * 1.3 + 'px; top: ' +
                     predictions[n].bbox[1] * 2 + 'px; width: ' +
                     predictions[n].bbox[2] + 'px; height: ' +
                     predictions[n].bbox[3] + 'px;';
-                // document.querySelector("body").innerHTML(p)
 
 
                 liveView.appendChild(highlighter);
