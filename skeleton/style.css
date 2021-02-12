@@ -21,22 +21,27 @@ video {
 }*/
 
 button {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     z-index: 9;
+    /* top: 50px;
+    left: 50px; */
+    background-color: transparent;
+    border: 1px solid rgb(153, 203, 247);
+    color: rgb(153, 203, 247);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    width: 96vw;
+    height: 95vh;
 }
 
-
-/* section {
+section {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
-} */
+}
 
-
-/* .removed {
+.removed {
     display: none;
-} */
+}
 
 .invisible {
     opacity: 0.2;
@@ -58,14 +63,14 @@ button {
     width: 100%;
     z-index: 2;
     font-size: 12px;
-    margin-left: 400px !important;
+    margin-left: 440px !important;
     /* margin-top: 100px !important; */
 }
 
 .highlighter {
     /* background: black; */
     /* padding: 10px;*/
-    margin-top: 20px;
+    margin-top: 0px;
     border: 1px solid rgb(153, 203, 247);
     z-index: 1;
     /* margin-top: 100px !important; */

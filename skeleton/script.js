@@ -84,9 +84,9 @@ function predictWebcam() {
         // they have a high confidence score.
         for (let n = 0; n < predictions.length; n++) {
             // If we are over 66% sure we are sure we classified it right, draw it!
-            if (predictions[n].score > 0.66) {
+            if (predictions[n].score > 0.1) {
                 const p = document.createElement('p');
-                //addiing text
+                //adding text
                 p.innerText = predictions[n].class + ' - with ' +
                     Math.round(parseFloat(predictions[n].score) * 100) +
                     '% confidence.';
@@ -94,18 +94,23 @@ function predictWebcam() {
                     (predictions[n].bbox[1] - 10) + 'px; width: ' +
                     (predictions[n].bbox[2] - 10) + 'px; top: 0; left: 0;';
 
+
+
                 const highlighter = document.createElement('div');
                 highlighter.setAttribute('class', 'highlighter');
                 // didnt workhighlighter.innerText('trying to add text');
-                highlighter.style = 'left: ' + predictions[n].bbox[0] + 'px; top: ' +
-                    predictions[n].bbox[1] + 'px; width: ' +
+                highlighter.style = 'left: ' + predictions[n].bbox[0] * 2 + 'px; top: ' +
+                    predictions[n].bbox[1] * 2 + 'px; width: ' +
                     predictions[n].bbox[2] + 'px; height: ' +
                     predictions[n].bbox[3] + 'px;';
+                // document.querySelector("body").innerHTML(p)
+
 
                 liveView.appendChild(highlighter);
                 liveView.appendChild(p);
-                children.push(highlighter);
-                children.push(p);
+                //creats new ones
+                // children.push(highlighter);
+                // children.push(p);
             }
         }
 
