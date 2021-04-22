@@ -10,16 +10,17 @@ a:visited {
     display: block;
     color: rgb(154, 202, 222);
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
 }
 
 a:hover {
+    font-family: "times";
     color: black;
 }
 
 #intro {
     position: absolute;
-    width: 250px;
+    width: 500px;
     left: 300px;
     top: 25px;
 }
@@ -39,4 +40,24 @@ a:hover {
 .link:hover {
     background-color: rgb(154, 202, 222);
     color: black
+}
+
+
+/* book */
+
+#bookpgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#bookpgcontainer>img {
+    max-height: 400px;
+    border: 0.2px solid rgb(154, 202, 222);
+    margin: 5px;
+}
+
+#bookmock>img {
+    height: 400px;
 }

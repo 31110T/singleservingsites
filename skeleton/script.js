@@ -84,7 +84,7 @@ function predictWebcam() {
         // they have a high confidence score.
         for (let n = 0; n < predictions.length; n++) {
             // If we are over 66% sure we are sure we classified it right, draw it!
-            if (predictions[n].score > 0.01) {
+            if (predictions[n].score > 0.1) {
                 const p = document.createElement('p');
                 // document.querySelector("body").innerHTML("p");
                 //adding text
